@@ -1,5 +1,5 @@
 {
-  "name": "service-name", // biryani-service, pizza-service, etc.
+  "name": "service-name",
   "version": "1.0.0",
   "description": "Microservice for Service Name in Rajinikanth Kitchen",
   "main": "server.js",
