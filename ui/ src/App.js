@@ -4,7 +4,7 @@ function App() {
   const [menu, setMenu] = useState([]);
 
   const fetchMenu = async (service) => {
-    const response = await fetch(`http://localhost:PORT/${service}`);
+    const response = await fetch(`http://13.127.193.217:PORT/${service}`);
     const data = await response.json();
     setMenu(data);
   };
