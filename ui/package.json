@@ -1,0 +1,12 @@
+{
+  "name": "service-name", // biryani-service, pizza-service, etc.
+  "version": "1.0.0",
+  "description": "Microservice for Service Name in Rajinikanth Kitchen",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
