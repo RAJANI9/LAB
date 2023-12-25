@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to Rajinikanth Kitchen</h1>
+      <h1>Welcome to Rajinikanth DevOps Kitchen</h1>
       <button onClick={() => fetchMenu('biryani')}>Biryani</button>
       {/* Repeat buttons for Pizza, Snacks, Cakes */}
       <ul>
