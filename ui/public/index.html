@@ -4,17 +4,124 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rajinikanth Kitchen</title>
+  <title>Rajinikanth DevOps Shopping</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
     body {
       background-image: url('/my-image.png');
       background-size: cover; /* Adjust as needed */
       background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+    #root {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .service {
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 200px;
+      text-align: center;
+    }
+    .service img {
+      width: 100%;
+      height: auto;
+    }
+    .service-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .service a {
+      display: block;
+      padding: 10px;
+      background: #f4f4f4;
+      color: #333;
+      text-decoration: none;
+    }
+    .service a:hover {
+      background: #ddd;
+    }
+    .search-bar {
+      margin: 20px;
+    }
+    .search-bar input[type="text"] {
+      padding: 10px;
+      margin-right: 10px;
+      width: 300px;
+    }
+    .search-bar button {
+      padding: 10px;
+      background-color: #555;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .search-bar button:hover {
+      background-color: #666;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .logo {
+      width: 150px; /* Adjust as needed */
+      height: auto;
+    }
+    .login-register {
+      display: flex;
+      gap: 10px;
     }
   </style>
 </head>
 <body>
-  <div id="root"></div>
+  <header>
+    <img src="/logo-path.png" alt="Rajinikanth Kitchen Logo" class="logo">
+    <div class="login-register">
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    </div>
+  </header>
+  <div class="search-bar">
+    <input type="text" placeholder="Search for products, brands and more">
+    <button>Search</button>
+  </div>
+  <div id="root">
+    <h1>Welcome to Rajinikanth DevOps Shopping</h1>
+    <div class="service-list">
+      <div class="service">
+        <img src="/biryani.jpg" alt="Biryani">
+        <a href="/biryani">Biryani</a>
+      </div>
+      <div class="service">
+        <img src="/pizza.jpg" alt="Pizza">
+        <a href="/pizza">Pizza</a>
+      </div>
+      <div class="service">
+        <img src="/snacks.jpg" alt="Snacks">
+        <a href="/snacks">Snacks</a>
+      </div>
+      <div class="service">
+        <img src="/cakes.jpg" alt="Cakes">
+        <a href="/cakes">Cakes</a>
+      </div>
+      <div class="service">
+        <img src="/cart.jpg" alt="Cart">
+        <a href="/cart">Cart</a>
+      </div>
+      <div class="service">
+        <img src="/payment.jpg" alt="Payment">
+        <a href="/payment">Payment Options</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
